@@ -8,7 +8,7 @@
 </head>
 <body>
 	<%
-		Cookie cookie = new Cookie("abc","1234");//cookie 객체 생성
+		Cookie cookie = new Cookie("naver","1234");//cookie 객체 생성
 		cookie.setMaxAge(60*60*24);//쿠키의 유효시간 설정 60초*60*24 = 24시간
 		response.addCookie(cookie);//response 객체 cookie 탑재		
 	%>

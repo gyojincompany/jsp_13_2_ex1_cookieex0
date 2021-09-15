@@ -16,7 +16,7 @@
 			if(name.equals("naver")){
 				out.println("cookies[" + i + "] name : " + name + "<br/>");
 				out.println("cookies[" + i + "] value : " + value + "<br/>");
-				cookies[i].setMaxAge(0);
+				cookies[i].setMaxAge(0);//쿠키의 유효기간을 0으로 셋팅하여 쿠키삭제
 				response.addCookie(cookies[i]);//response 객체 cookie 탑재		
 				out.println(name + "쿠키가 삭제되었습니다.<br/>");
 			}
